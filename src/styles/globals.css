@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f6f5f9;
+  --foreground: #f6f5f9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #f6f5f9;
+    --foreground: #ededed;
+  }
+}
+
+@font-face {
+  font-family: 'Avenir Book';
+  src: url('/fonts/Avenir-Book.tff') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Avenir Book', sans-serif;
+}
+
+/* For WebKit Browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 8px; /* Height of the scrollbar (horizontal) */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #dadada; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #868686; /* Thumb color on hover */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #333333; /* Color of the scrollbar track */
+  border-radius: 4px; /* Rounded corners for the track */
+}
